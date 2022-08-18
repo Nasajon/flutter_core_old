@@ -12,12 +12,12 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_dependencies:
-    path: "../flutter_dependencies"
   # flutter_dependencies:
-  #   git:
-  #     url: git@github.com:Nasajon/flutter_dependencies.git
-  #     ref: main # branch name
+  #   path: "../flutter_dependencies"
+  flutter_dependencies:
+    git:
+      url: git@github.com:Nasajon/flutter_dependencies.git
+      ref: main # branch name
 
 dev_dependencies:
   flutter_test:
