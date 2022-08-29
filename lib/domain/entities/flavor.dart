@@ -24,7 +24,7 @@ extension FlavorDescription on Flavor {
       case Flavor.hml:
         return name;
       case Flavor.prod:
-        return 'prd';
+        return '';
       default:
         return '';
     }
