@@ -8,9 +8,6 @@ enum Flavor {
   /// hml flavor
   hml,
 
-  /// preprod flavor
-  preprod,
-
   /// prod flavor
   prod,
 }
