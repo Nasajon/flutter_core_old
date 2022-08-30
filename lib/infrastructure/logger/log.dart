@@ -1,45 +1,29 @@
-import 'dart:io';
-
 import 'package:flutter_dependencies/flutter_dependencies.dart';
 
 ///
 /// App logging and analytics utils.
 ///
 abstract class Log {
-  static final _logger = Logger(
-      // printer: _AppPrinter(),
-      );
-
-  static bool _isTest() {
-    return Platform.environment.containsKey('FLUTTER_TEST');
-  }
+  static final _logger = Logger();
 
   /// Info level
   static void i(Object? message, [dynamic data]) {
-    if (!_isTest()) {
-      _logger.i(message, data);
-    }
+    _logger.i(message, data);
   }
 
   /// Debug level
   static void d(Object? message, [dynamic data]) {
-    if (!_isTest()) {
-      _logger.d(message, data);
-    }
+    _logger.d(message, data);
   }
 
   /// Warning level
   static void w(Object? message, [dynamic data]) {
-    if (!_isTest()) {
-      _logger.w(message, data);
-    }
+    _logger.w(message, data);
   }
 
   /// Error level
   static void e(Object? message, [dynamic error, StackTrace? stackTrace]) {
-    if (!_isTest()) {
-      _logger.e(message, error, stackTrace);
-    }
+    _logger.e(message, error, stackTrace);
   }
 
   // TODO: ativar a funcionalidade com o crashlyctics
