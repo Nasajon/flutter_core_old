@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter_dependencies/flutter_dependencies.dart';
 
 /// A view model state, which is used by [ViewModel]
 @immutable

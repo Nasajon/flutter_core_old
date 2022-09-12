@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_dependencies/flutter_dependencies.dart';
 
 import '../../flutter_core.dart';
