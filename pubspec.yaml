@@ -17,7 +17,7 @@ dependencies:
   flutter_dependencies:
     git:
       url: git@github.com:Nasajon/flutter_dependencies.git
-      ref: main # branch name
+      ref: master # branch name
 
 dev_dependencies:
   flutter_test:
