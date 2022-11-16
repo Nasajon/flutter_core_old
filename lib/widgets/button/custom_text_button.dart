@@ -234,9 +234,10 @@ class CustomTextButton extends StatelessWidget {
                     children: [
                       if (_isLeading)
                         Padding(
-                          padding: EdgeInsets.only(
-                            right: context.theme.spacingInlineNano,
-                          ),
+                          padding: EdgeInsets.zero,
+                          // only(
+                          //   right: context.theme.spacingInlineNano,
+                          // ),
                           child: icon!,
                         ),
                       label,

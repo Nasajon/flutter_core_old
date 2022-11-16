@@ -135,21 +135,21 @@ class AppTheme {
         border: OutlineInputBorder(
           borderSide: BorderSide(
             width: 1.0,
-            color: colorPalette.secondary,
+            color: colorPalette.base[400]!,
           ),
           borderRadius: BorderRadius.circular(Spacing.xs.value),
         ),
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(
             width: 1.0,
-            color: colorPalette.secondary,
+            color: colorPalette.base[400]!,
           ),
           borderRadius: BorderRadius.circular(Spacing.xs.value),
         ),
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(
             width: 1.0,
-            color: colorPalette.base[700]!,
+            color: colorPalette.secondary,
           ),
           borderRadius: BorderRadius.circular(Spacing.xs.value),
         ),

@@ -27,7 +27,7 @@ class LightColorPalette implements IColorPalette {
           100: Color(0xffF0F1F5),
           200: Color(0xffDDDEE4),
           300: Color(0xffBCBEC8),
-          400: Color(0xff9194A3),
+          400: Color(0xff999999),
           500: Color(0xff636779),
           600: Color(0xff3E4256),
           700: Color(0xff24283E),
@@ -55,11 +55,11 @@ class LightColorPalette implements IColorPalette {
 
   @override
   MaterialColor get secondary => const MaterialColor(
-        0xff999999,
+        0xff00459B,
         {
           50: Color(0xffEBEBFF),
           100: Color(0xffD6D5FF),
-          200: Color(0xff999999),
+          200: Color(0xff00459B),
           300: Color(0xff9D9EFD),
           400: Color(0xff7E80FB),
           500: Color(0xff5D65F7),

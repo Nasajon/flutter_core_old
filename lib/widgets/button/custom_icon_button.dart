@@ -158,15 +158,20 @@ class CustomIconButton extends StatelessWidget {
             ),
             visualDensity: visualDensity,
           ),
-      child: Center(
-        child: loading
-            ? const SimpleLoading(
-                width: 10,
-              )
-            : Icon(
-                icon,
-                size: iconSize ?? 24.fontSize,
-              ),
+      child: Row(
+        children: [
+          Text('data'),
+          Center(
+            child: loading
+                ? const SimpleLoading(
+                    width: 10,
+                  )
+                : Icon(
+                    icon,
+                    size: iconSize ?? 24.fontSize,
+                  ),
+          ),
+        ],
       ),
     );
   }

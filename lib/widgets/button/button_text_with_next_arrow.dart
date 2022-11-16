@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_core/flutter_core.dart';
 
-import 'custom_text_button.dart';
-
 /// Text Button with next arrow
 class ButtonTextWithNextArrow extends StatelessWidget {
   /// Default constructor
@@ -12,6 +10,7 @@ class ButtonTextWithNextArrow extends StatelessWidget {
     required this.label,
     required this.onPressed,
     this.iconSize,
+    this.iconData,
   }) : super(key: key);
 
   /// Text to be shown as button label
@@ -25,6 +24,9 @@ class ButtonTextWithNextArrow extends StatelessWidget {
 
   ///Icon size
   final double? iconSize;
+
+  /// The icon will show in the button
+  final IconData? iconData;
 
   @override
   Widget build(BuildContext context) {
@@ -40,18 +42,27 @@ class ButtonTextWithNextArrow extends StatelessWidget {
 
     return CustomTextButton.smallwithbold(
       text: label,
-      iconLocation: CustomTextButtonIconLocation.trailing,
+      iconLocation: CustomTextButtonIconLocation.leading,
       onPressed: onPressed,
       icon: Icon(
-        Icons.arrow_right,
-        size: iconSize ?? 12.fontSize,
-        color: context.colorScheme.onBackground,
+        iconData ?? Icons.keyboard_arrow_right,
+        size: iconSize ?? 18.fontSize,
+        color: context.colorPalette.base,
       ),
-      style: effectiveStyle.merge(
-        ButtonStyle(
-          overlayColor: MaterialStateProperty.all(Colors.transparent),
-        ),
-      ),
+      style: ElevatedButtonTheme.of(context).style!.copyWith(
+            minimumSize: MaterialStateProperty.all(
+              const Size(130, 40),
+            ),
+            padding: MaterialStateProperty.all(
+              EdgeInsets.symmetric(
+                horizontal: Spacing.md.value,
+                // vertical: Spacing.xs.value,
+              ),
+            ),
+            textStyle: MaterialStateProperty.all(
+              context.textTheme.button!.copyWith(),
+            ),
+          ),
     );
   }
 }

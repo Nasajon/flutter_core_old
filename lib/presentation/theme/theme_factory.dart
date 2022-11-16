@@ -30,9 +30,10 @@ abstract class ThemeFactory {
 
     switch (themeVersion) {
       case ThemeVersion.v2:
-        return AppTheme.instance.darkTheme;
+        return AppTheme.instance.lightTheme;
       default:
-        return AppThemeFactory.instance.currentDarkTheme;
+        return AppTheme.instance.lightTheme;
+      // return AppThemeFactory.instance.currentDarkTheme;
     }
   }
 }

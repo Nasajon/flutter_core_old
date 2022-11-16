@@ -10,17 +10,17 @@ class LightForeground implements IForegroundColorPalette {
   Color get active => const Color(0xff5A5A5A);
 
   @override
-  Color get normal => const Color(0xff050922).withOpacity(0.87);
+  Color get normal => const Color(0xff5A5A5A).withOpacity(0.87);
 
   @override
-  Color get minimal => const Color(0xff050922).withOpacity(0.6);
+  Color get minimal => const Color(0xff5A5A5A).withOpacity(0.6);
 
   @override
   Color get disabled => const Color(0xff050922).withOpacity(0.38);
 
   @override
-  Color get detail => const Color(0xff050922).withOpacity(0.16);
+  Color get detail => const Color(0xff5A5A5A).withOpacity(0.16);
 
   @override
-  Color get soft => const Color(0xff050922).withOpacity(0.08);
+  Color get soft => const Color(0xff5A5A5A).withOpacity(0.08);
 }
