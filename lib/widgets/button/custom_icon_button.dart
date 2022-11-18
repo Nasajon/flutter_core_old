@@ -160,7 +160,6 @@ class CustomIconButton extends StatelessWidget {
           ),
       child: Row(
         children: [
-          Text('data'),
           Center(
             child: loading
                 ? const SimpleLoading(

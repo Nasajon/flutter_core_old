@@ -8,7 +8,7 @@ class ButtonTextWithNextArrow extends StatelessWidget {
     Key? key,
     this.style,
     required this.label,
-    required this.onPressed,
+    this.onPressed,
     this.iconSize,
     this.iconData,
   }) : super(key: key);
@@ -20,7 +20,7 @@ class ButtonTextWithNextArrow extends StatelessWidget {
   final ButtonStyle? style;
 
   /// Function to be called, when the button has been pressed
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
 
   ///Icon size
   final double? iconSize;
