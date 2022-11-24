@@ -6,3 +6,4 @@ export 'assets/assets.dart';
 export 'domain/domain.dart';
 export 'infrastructure/infrastructure.dart';
 export 'presentation/presentation.dart' hide tr;
+export 'utils/utils.dart';
