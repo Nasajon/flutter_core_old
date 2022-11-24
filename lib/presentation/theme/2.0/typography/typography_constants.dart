@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_core/flutter_core.dart';
 
 /// Default app font family
-const String appFontFamily = 'Source Sans Pro';
+const String appFontFamily = 'PTSans';
+const String appFontNarrow = 'PTSansNarrow';
 
 ///
 /// App possible FontWeight list
@@ -34,14 +35,14 @@ enum AppLineHeight {
   /// Extra small height = 1.0
   xs(1.0),
 
-  /// Small height = 1.25
-  sm(1.25),
+  /// Small height = 1.2
+  sm(1.2),
 
-  /// Medium height = 1.5
-  md(1.5),
+  /// Medium height = 1.4
+  md(1.4),
 
-  /// Large height = 2.0
-  lg(2.0);
+  /// Large height = 1.8
+  lg(1.8);
 
   /// Line height spacing value
   final double value;
@@ -87,5 +88,17 @@ enum AppFontSize {
   const AppFontSize(this._value);
 
   /// Returns the font size with responsiveness
+  double get value => _value.fontSize;
+}
+
+enum AppLetterSpacing {
+  sm(0.3),
+  md(0.8);
+
+  final double _value;
+
+  const AppLetterSpacing(this._value);
+
+  /// Returns the letter spacing with responsiveness
   double get value => _value.fontSize;
 }
