@@ -23,4 +23,8 @@ class DateInputFormatter {
   String unmaskDate(String text) {
     return text.replaceAll('/', '-');
   }
+
+  String convertPattern(String text) {
+    return '${text.substring(8, 10)}/${text.substring(5, 7)}/${text.substring(0, 4)}';
+  }
 }
